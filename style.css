@@ -1,0 +1,26 @@
+body {
+  background: #2554fe;
+}
+
+button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(6deg);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.06);
+
+  &:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  &::after {
+    content: "button " attr(data-dimension);
+    white-space: nowrap;
+    background-color: #2554fe;
+    font-size: 10px;
+    padding: 2px;
+    opacity: 0.9;
+    color: white;
+    position: absolute;
+  }
+}
